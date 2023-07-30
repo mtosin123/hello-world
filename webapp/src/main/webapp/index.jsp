@@ -1,64 +1,100 @@
-<Html>  
-<head>   
-<title>  
-Tars Hub Enterprise Registration Page  
-</title>  
-</head>  
-<body bgcolor="Lightskyblue">  
-<br>  
-<br>  
-<form>  
-  
-<label> Firstname </label>         
-<input type="text" name="firstname" size="15"/> <br> <br>  
-<label> Middlename: </label>     
-<input type="text" name="middlename" size="15"/> <br> <br>  
-<label> Lastname: </label>         
-<input type="text" name="lastname" size="15"/> <br> <br>  
-  
-<label>   
-Course :  
-</label>   
-<select>  
-<option value="USDT">USDT</option>  
-<option value="Bitcoin">Bitcoin</option>  
-<option value="Ethereum">Ethereum</option>  
-<option value="ADA">ADA</option>  
-<option value="Arbitrum">Arbitrum</option>  
-<option value="Luna">Luna</option>  
-<option value="Matic">Matic</option>  
-</select>  
-  
-<br>  
-<br>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" name="male"/> Male <br>  
-<input type="radio" name="female"/> Female <br>  
-<input type="radio" name="other"/> Other  
-<br>  
-<br>  
-  
-<label>   
-Phone No :  
-</label>  
-<input type="text" name="country code"  value="+91" size="2"/>   
-<input type="text" name="phone" size="10"/> <br> <br>  
-Address  
-<br>  
-<textarea cols="80" rows="5" value="address">  
-</textarea>  
-<br> <br>  
-Email:  
-<input type="email" id="email" name="email"/> <br>    
-<br> <br>  
-Password:  
-<input type="Password" id="pass" name="pass"> <br>   
-<br> <br>  
-Re-type password:  
-<input type="Password" id="repass" name="repass"> <br> <br>  
-<input type="button" value="Submit"/>  
-</form>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name 
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+	
+<p>
+<label>Enquiry Regarding 
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="website" >Our Website</option>
+<option value="membership" >Membership</option>
+<option value="telepathy" >We'll Guess!</option>
+</select>
+</label> 
+</p>
+
+<p>
+<label>Enquiry 
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Enquiry</button></p>
+
+</form>
+
+</body>
+</html>
