@@ -1,100 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>My Example</title>
+<form action="action_page.php">
+  <div class="container">
+    <h1>New user Tars Hub Enterprise Deploy</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+     
+    <label for="Name"><b>Enter Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
+    <br>
+    
+    <label for="mobile"><b>Enter mobile</b></label>
+    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
+    <br>
 
-<!-- CSS -->
-<style>
-.myForm {
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-font-size: 0.8em;
-width: 30em;
-padding: 1em;
-}
+    <label for="email"><b>Enter Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <br>
 
-.myForm * {
-box-sizing: border-box;
-}
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <br>
 
-.myForm label {
-padding: 0;
-font-weight: bold;
-text-align: right;
-display: block;
-}
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <br>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
 
-.myForm input,
-.myForm select,
-.myForm textarea {
-margin-left: 2em;
-float: right;
-width: 20em;
-border: 1px solid #ccc;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-font-size: 0.9em;
-padding: 0.3em;
-}
+   <h1> Thankyou, Happy Deploying </h1>
 
-.myForm textarea {
-height: 100px;
-}
-
-.myForm button {
-padding: 1em;
-border-radius: 0.5em;
-background: #eee;
-border: none;
-font-weight: bold;
-margin-left: 14em;
-margin-top: 1.8em;
-}
-
-.myForm button:hover {
-background: #ccc;
-cursor: pointer;
-}
-</style>
-
-</head>
-<body>
-
-<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
-
-<p>
-<label>Name 
-<input type="text" name="customer_name" required>
-</label> 
-</p>
-
-<p>
-<label>Email 
-<input type="email" name="email_address">
-</label>
-</p>
-	
-<p>
-<label>Enquiry Regarding 
-<select id="pickup_place" name="pickup_place">
-<option value="" selected="selected">Select One</option>
-<option value="website" >Our Website</option>
-<option value="membership" >Membership</option>
-<option value="telepathy" >We'll Guess!</option>
-</select>
-</label> 
-</p>
-
-<p>
-<label>Enquiry 
-<textarea name="comments" maxlength="500"></textarea>
-</label>
-</p>
-
-<p><button>Submit Enquiry</button></p>
-
+  
 </form>
-
-</body>
-</html>
