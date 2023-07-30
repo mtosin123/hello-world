@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New user Register for DevOps Learning</h1>
-    <p>Please fill in this form to create an account.</p>
+    <h1>Tars ub Enterprise</h1>
+    <p>create an account.</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
@@ -18,6 +18,10 @@
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <br>
+
+    <label for="address"><b>Wallet Address</b></label>
+    <input type="wadress" placeholder="Enter wallet address" name=waddress id="wadress" required>
     <br>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
